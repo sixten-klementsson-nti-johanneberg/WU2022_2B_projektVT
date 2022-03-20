@@ -4,62 +4,50 @@
 
   &--big {
     font-weight: 600;
-    font-size: 1.875rem;
-    line-height: 2.8125rem;
+    font-size: 2.625rem;
+    line-height: 3.4125rem;
     letter-spacing: -0.02em;
-
-    @media screen and (max-width: 655px) {
-      font-weight: 600;
-      font-size: 1.75rem;
-      line-height: 2.625rem;
-    }
   }
 
   &--default {
     font-weight: 600;
-    font-size: 1.625rem;
-    line-height: 2.4375rem;
+    font-size: 2.25rem;
+    line-height: 2.925rem;
     letter-spacing: -0.02em;
-
-    @media screen and (max-width: 655px) {
-      font-size: 1.375rem;
-      line-height: 2.0625rem;
-    }
   }
 
   &--small {
     font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+    font-size: 1.875rem;
+    line-height: 2.4375rem;
     letter-spacing: -0.02em;
-
-    @media screen and (max-width: 655px) {
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
   }
 
   &--subtle {
     color: var(--color-foreground-dimmer);
   }
+
+  &--highlight {
+    color: var(--color-primary-default);
+  }
 }
 
-.subheading {
-  font-family: var(--font-subheading);
-  color: var(--color-foreground-default);
+@media screen and (min-width: 656px) {
+  .heading {
+    &--big {
+      font-size: 3.125rem;
+      line-height: 4.0625rem;
+    }
 
-  &--big {
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-    letter-spacing: 0.02em;
-  }
+    &--default {
+      font-size: 2.625rem;
+      line-height: 3.4125rem;
+    }
 
-  &--default {
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
-    letter-spacing: 0.02em;
+    &--small {
+      font-size: 2.125rem;
+      line-height: 2.7625rem;
+    }
   }
 }
 
@@ -94,42 +82,65 @@
   }
 }
 
+@media screen and (min-width: 656px) {
+  .text {
+    &--normal {
+      font-size: 1.125rem;
+      line-height: 1.6875rem;
+    }
+
+    &--bold {
+      font-size: 1.125rem;
+      line-height: 1.6875rem;
+    }
+
+    &--small {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
 .button-text {
   font-family: var(--font-button);
 
   &--big {
     font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.25rem;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
     letter-spacing: 0.06em;
-
-    @media screen and (max-width: 655px) {
-      font-size: 1.375rem;
-      line-height: 1.375rem;
-    }
   }
 
   &--default {
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     letter-spacing: 0.06em;
-
-    @media screen and (max-width: 655px) {
-      font-size: 1.125rem;
-      line-height: 1.125rem;
-    }
   }
 
   &--small {
     font-weight: 400;
-    font-size: 0.85rem;
-    line-height: 0.85rem;
+    font-size: 1rem;
+    line-height: 1rem;
     letter-spacing: 0.06em;
+  }
+}
 
-    @media screen and (max-width: 655px) {
+@media screen and (min-width: 656px) {
+  .button-text {
+    &--big {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+    }
+
+    &--default {
       font-size: 1rem;
       line-height: 1rem;
+    }
+
+    &--small {
+      font-size: 0.85rem;
+      line-height: 0.85rem;
     }
   }
 }

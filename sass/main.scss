@@ -1,6 +1,17 @@
 @import "abstract/variables";
 @import "abstract/typography";
 
+@import "global/resets";
+@import "global/common";
+
 @import "components/header";
+@import "components/footer";
+@import "components/button";
+@import "components/section";
+@import "components/testamonial";
+
+@import "components/hero-image";
+@import "components/language-image";
+@import "components/gamemode-image";
 
 @import "pages/index";
