@@ -1,126 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" media="all" />
-    <title>proghour frontpage</title>
-  </head>
 
-  <body>
-    <header class="index__header">
-      <p class="header__logo"></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" media="all" />
+  <title>proghour frontpage</title>
+</head>
 
-      <nav class="header__nav">
-        <a href="login.html">Log In</a>
-        <a href="#">Create Game</a>
-      </nav>
-    </header>
+<body>
+  <header class="header">
+    <p class="header__logo">proghour</p>
 
-    <section class="index__hero section section--default section--primary">
-      <div class="index__hero-information">
-        <h1 class="heading heading--big">
-          Let's make <span class="code-text">coding</span> the
-          <strong class="heading heading--big heading--highlight"
-            >highlight</strong
-          >
-          of your day
-        </h1>
+    <nav class="header__nav">
+      <a class="text text--normal" href="login.html">Log In</a>
+      <a class="text text--normal" href="#">Create Game</a>
+    </nav>
+  </header>
 
-        <p class="index__hero-text text text--normal">
-          We transform the lonely experience of coding problems into a fun
-          collaborative game. We transform the lonely experience of coding
-          problems into a fun collaborative game.
-        </p>
-
-        <button
-          class="
-            button button--primary button--big button-text button-text--big
-            index__cta
-          "
-        >
-          Create Game
-        </button>
-      </div>
-
-      <div class="hero-image">
-        <div class="hero-image__you hero-image__panel"></div>
-        <div class="hero-image__best-friend hero-image__panel"></div>
-      </div>
-    </section>
-
-    <section class="index__what section section--default">
-      <h1 class="heading heading--big">
-        Solve
-        <strong class="heading heading--big heading--highlight">fun </strong>
-        code challenges with your friends
-      </h1>
+  <section class="index__hero section section--default section--primary">
+    <div class="index__hero-information">
+      <h2 class="heading heading--big">
+        Let's make <span class="code-text">coding</span> the
+        <strong class="heading heading--big heading--highlight">highlight</strong>
+        of your day
+      </h2>
 
       <p class="index__hero-text text text--normal">
-        Coding challenges is often a dreading task, or at least a bit boring...
-        and it’s notorious for being a nerdy solo experience. We’re making this
-        dreading task actually fun by making it a game without removing the
-        integral parts that all other coding games do.
+        We transform the lonely experience of coding problems into a fun
+        collaborative game. We transform the lonely experience of coding
+        problems into a fun collaborative game.
       </p>
-    </section>
 
-    <section class="index__features">
-      <div class="index__features-section">
-        <div class="wrapper--heading-default">
-          <h1 class="heading heading--big">
-            Choose your favourite between our 20+ languages
-          </h1>
+      <button class="
+            button button--primary button--big button-text button-text--big
+            index__cta
+          ">
+        Create Game
+      </button>
+    </div>
 
-          <p class="index__hero-text text text--normal">
-            Coding challenges is often a dreading task, or at least a bit
-            boring... and it’s notorious for being a nerdy solo experience.
-            We’re making this dreading task actually fun by making it a game
-            without removing the integral parts that all other coding games do.
-          </p>
+    <div class="hero-image">
+      <div class="hero-image__you hero-image__panel"></div>
+      <div class="hero-image__best-friend hero-image__panel"></div>
+    </div>
+  </section>
+
+  <section class="index__what section section--default">
+    <h2 class="heading heading--default">
+      Solve
+      <strong class="heading heading--default heading--highlight">fun </strong>
+      code challenges with your friends
+    </h2>
+
+    <p class="index__hero-text text text--normal">
+      Coding challenges is often a dreading task, or at least a bit boring...
+      and it’s notorious for being a nerdy solo experience. We’re making this
+      dreading task actually fun by making it a game without removing the
+      integral parts that all other coding games do.
+    </p>
+  </section>
+
+  <section class="index__features">
+    <div class="index__features-section">
+      <div class="wrapper--heading-default">
+        <h2 class="heading heading--default">
+          Choose your favourite between our 20+ languages
+        </h2>
+
+        <p class="index__hero-text text text--normal">
+          Coding challenges is often a dreading task, or at least a bit
+          boring... and it’s notorious for being a nerdy solo experience.
+          We’re making this dreading task actually fun by making it a game
+          without removing the integral parts that all other coding games do.
+        </p>
+      </div>
+
+      <div>
+        <div class="language-image">
+          <div class="language-image__inner">
+            <div style="height: 64px"></div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div>
-          <div class="language-image">
-            <div class="language-image__inner">
-              <div style="height: 64px"></div>
+    <div class="index__features-section">
+      <div class="wrapper--heading-default">
+        <h2 class="heading heading--default">
+          You’ll never get bored with our 10 different gamemodes
+        </h2>
+
+        <p class="index__hero-text text text--normal">
+          You’ll never get bored because you will always have something new to
+          try! You can choose between a pleathera of gamemodes, all of them we
+          believe are fun :)
+        </p>
+      </div>
+
+      <div class="index__panel">
+        <div class="gamemode-image">
+          <div class="hero-image__you hero-image__panel"></div>
+          <div class="hero-image__best-friend hero-image__panel"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="index__testamonials">
+    <h2 class=" index__testamonial-header heading heading--default">
+      Let’s have a fantastic <strong class="heading heading--default heading--highlight">evening</strong> with your
+      friends!
+    </h2>
+
+    <div class="index__testamonial-list">
+      <div class="testamonial">
+        <div class="testamonial__person">
+          <div class="testamonial__left">
+            <img class="testamonial__avatar-image" src="./img/example_avatar.png" alt="Avatar">
+            <div class="testamonial__details">
+              <p class="text text--bold">@SickanDev</p>
+              <p class="text text--normal">Software Developer</p>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="index__features-section">
-        <div class="wrapper--heading-default">
-          <h1 class="heading heading--big">
-            You’ll never get bored with our 10 different gamemodes
-          </h1>
-
-          <p class="index__hero-text text text--normal">
-            You’ll never get bored because you will always have something new to
-            try! You can choose between a pleathera of gamemodes, all of them we
-            believe are fun :)
-          </p>
-        </div>
-
-        <div>
-          <div class="gamemode-image">
-            <div class="hero-image__you hero-image__panel"></div>
-            <div class="hero-image__best-friend hero-image__panel"></div>
+          <div class="testamonial__right">
+            <a class="testamonial__source" href="#">
+              <img class="testamonial__source-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+            </a>
           </div>
         </div>
+
+        <div class="testamonial__text">
+          <p class="text text--normal">
+            “proghour is the most fun I’ve ever had programming!”
+          </p>
+        </div>
       </div>
-    </section>
 
-    <section class="index__testamonials"></section>
+      <div class="testamonial">
+        <div class="testamonial__person">
+          <div class="testamonial__left">
+            <img class="testamonial__avatar-image" src="./img/example_avatar.png" alt="Avatar">
+            <div class="testamonial__details">
+              <p class="text text--bold">@SickanDev</p>
+              <p class="text text--normal">Software Developer</p>
+            </div>
+          </div>
 
-    <section class="index__how"></section>
+          <div class="testamonial__right">
+            <a class="testamonial__source" href="#">
+              <img class="testamonial__source-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+            </a>
+          </div>
+        </div>
 
-    <footer class="index__footer"></footer>
-  </body>
+        <div class="testamonial__text">
+          <p class="text text--normal">
+            “proghour is the most fun I’ve ever had programming!”
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="index__how">
+    <h2 class="heading heading--default">
+      Jump right in and start playing now!
+    </h2>
+
+    <button class="
+            button button--primary button--big button-text button-text--big
+            index__cta
+          ">
+      Create Game
+    </button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__policies">
+      <a class="text text--normal" href="#">Terms of Service</a>
+      <a class="text text--normal" href="#">Privacy policy</a>
+      <a class="text text--normal" href="#">Cookie policy</a>
+    </div>
+
+    <div class="footer__contact">
+
+      <div class="footer__socials">
+        <a class="footer__social-button" href="#">
+          <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+        </a>
+        <a class="footer__social-button" href="#">
+          <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+        </a>
+        <a class="footer__social-button" href="#">
+          <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+        </a>
+        <a class="footer__social-button" href="#">
+          <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+        </a>
+      </div>
+
+      <p class="text text--normal">
+        support@proghour.com
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>

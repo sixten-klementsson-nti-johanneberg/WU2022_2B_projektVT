@@ -25,13 +25,13 @@
   --color-primary-dimmest: #b84000;
   --color-primary-dimmer: #e04e00;
   --color-primary-default: #ff5900;
-  --color-primary-stronger: #ff9c66;
-  --color-primary-strongest: #ff9c66;
+  --color-primary-stronger: #ffceb3;
+  --color-primary-strongest: #ffeee5;
   --color-secondary-dimmest: #b84000;
   --color-secondary-dimmer: #097bd3;
   --color-secondary-default: #0b93f4;
-  --color-secondary-stronger: #6dbef8;
-  --color-secondary-strongest: #cee9fd;
+  --color-secondary-stronger: #b6dffb;
+  --color-secondary-strongest: #e6f4fe;
   --color-positive-dimmest: #107f5e;
   --color-positive-dimmer: #14a378;
   --color-positive-default: #19cc95;
@@ -197,11 +197,74 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
   width: 100%;
   height: 80px;
-  background: var(--color-background-lower);
+  background: var(--color-background-default);
+}
+.header__nav {
+  display: flex;
+  gap: 16px;
+}
+.header__logo {
+  font-family: var(--font-heading);
+  font-size: 29px;
+  font-weight: 600;
+  color: var(--color-foreground-default);
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+  background: var(--color-background-lower);
+  padding: 64px 16px;
+  height: max-content;
+}
+.footer__policies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+  min-height: 100%;
+}
+.footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.footer__social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: var(--color-background-higher);
+}
+.footer__social-button:active {
+  background: var(--color-background-highest);
+}
+.footer__social-image {
+  height: 14px;
+}
+
+@media screen and (min-width: 656px) {
+  .footer__social-button:hover {
+    background: var(--color-background-highest);
+  }
+}
 .button {
   display: flex;
   justify-content: center;
@@ -317,6 +380,64 @@ body {
   width: 100%;
 }
 
+.testamonial {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--color-background-default);
+  border-radius: var(--border-radius-default);
+  padding: 24px;
+  height: 200px;
+  min-width: 360px;
+  width: 360px;
+}
+.testamonial__person {
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+  width: 100%;
+}
+.testamonial__left {
+  display: flex;
+  gap: 8px;
+}
+.testamonial__avatar-image {
+  width: 54px;
+  height: 54px;
+  border-radius: 100px;
+}
+.testamonial__details {
+  display: flex;
+  flex-direction: column;
+}
+.testamonial__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: max-content;
+  height: 100%;
+}
+.testamonial__source {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: var(--color-background-higher);
+}
+.testamonial__source:active {
+  background: var(--color-background-highest);
+}
+.testamonial__source-image {
+  height: 14px;
+}
+
+@media screen and (min-width: 656px) {
+  .testamonial__source:hover {
+    background: var(--color-background-highest);
+  }
+}
 .hero-image {
   display: flex;
   gap: 16px;
@@ -361,6 +482,11 @@ body {
   max-height: 400px;
   background: var(--color-background-higher);
   border-radius: var(--border-radius-default);
+  transform: perspective(1500px) rotateY(15deg);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+  transform-style: preserve-3d;
+  margin-left: 12px;
 }
 .gamemode-image__panel {
   background: var(--color-background-default);
@@ -405,6 +531,31 @@ body {
   display: flex;
   flex-direction: column;
   gap: 64px;
+}
+.index__testamonials {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 64px 0;
+  background: var(--color-secondary-strongest);
+}
+.index__testamonial-list {
+  display: flex;
+  gap: 32px;
+  padding: 0 16px;
+  overflow: auto;
+}
+.index__testamonial-header {
+  width: 100%;
+  text-align: center;
+  padding: 0 16px;
+}
+.index__how {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 128px 16px;
+  background: var(--color-background-default);
 }
 
 @media screen and (min-width: 656px) {

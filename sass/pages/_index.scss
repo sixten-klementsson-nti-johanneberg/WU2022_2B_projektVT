@@ -44,6 +44,37 @@
     flex-direction: column;
     gap: 64px;
   }
+
+  &__testamonials {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 64px 0;
+
+    background: var(--color-secondary-strongest);
+  }
+
+  &__testamonial-list {
+    display: flex;
+    gap: 32px;
+    padding: 0 16px;
+    overflow: auto;
+  }
+
+  &__testamonial-header {
+    width: 100%;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  &__how {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    padding: 128px 16px;
+    background: var(--color-background-default);
+  }
 }
 
 @media screen and (min-width: 656px) {
