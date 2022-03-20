@@ -380,7 +380,7 @@ body {
   width: 100%;
 }
 
-.testamonial {
+.testimonial {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -391,33 +391,33 @@ body {
   min-width: 360px;
   width: 360px;
 }
-.testamonial__person {
+.testimonial__person {
   display: flex;
   justify-content: space-between;
   height: max-content;
   width: 100%;
 }
-.testamonial__left {
+.testimonial__left {
   display: flex;
   gap: 8px;
 }
-.testamonial__avatar-image {
+.testimonial__avatar-image {
   width: 54px;
   height: 54px;
   border-radius: 100px;
 }
-.testamonial__details {
+.testimonial__details {
   display: flex;
   flex-direction: column;
 }
-.testamonial__right {
+.testimonial__right {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   width: max-content;
   height: 100%;
 }
-.testamonial__source {
+.testimonial__source {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -426,30 +426,50 @@ body {
   border-radius: 100px;
   background: var(--color-background-higher);
 }
-.testamonial__source:active {
+.testimonial__source:active {
   background: var(--color-background-highest);
 }
-.testamonial__source-image {
+.testimonial__source-image {
   height: 14px;
 }
 
 @media screen and (min-width: 656px) {
-  .testamonial__source:hover {
+  .testimonial__source:hover {
     background: var(--color-background-highest);
   }
 }
+.html-image {
+  position: relative;
+  transition: transform 1s ease 0s;
+}
+.html-image--right {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transform: perspective(1500px) rotateY(15deg);
+  left: 2.2vw;
+}
+.html-image--left {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  perspective-origin: left;
+  transform: perspective(1500px) rotateY(-15deg);
+  right: 2.2vw;
+}
+
 .hero-image {
   display: flex;
+  flex-direction: column;
   gap: 16px;
   padding: 16px;
   width: 100%;
-  aspect-ratio: 1.6;
+  max-width: 500px;
+  aspect-ratio: 0.6;
   height: 100%;
-  max-height: 400px;
+  max-height: 420px;
+  margin: 0 auto;
   background: var(--color-background-higher);
   border-radius: var(--border-radius-default);
 }
 .hero-image__panel {
+  padding: 24px;
   background: var(--color-background-default);
   width: 100%;
   height: 100%;
@@ -482,11 +502,6 @@ body {
   max-height: 400px;
   background: var(--color-background-higher);
   border-radius: var(--border-radius-default);
-  transform: perspective(1500px) rotateY(15deg);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  transition: transform 1s ease 0s;
-  transform-style: preserve-3d;
-  margin-left: 12px;
 }
 .gamemode-image__panel {
   background: var(--color-background-default);
@@ -532,20 +547,20 @@ body {
   flex-direction: column;
   gap: 64px;
 }
-.index__testamonials {
+.index__testimonials {
   display: flex;
   flex-direction: column;
   gap: 64px;
   padding: 64px 0;
   background: var(--color-secondary-strongest);
 }
-.index__testamonial-list {
+.index__testimonial-list {
   display: flex;
   gap: 32px;
   padding: 0 16px;
   overflow: auto;
 }
-.index__testamonial-header {
+.index__testimonial-header {
   width: 100%;
   text-align: center;
   padding: 0 16px;

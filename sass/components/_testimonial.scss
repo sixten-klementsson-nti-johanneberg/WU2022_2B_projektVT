@@ -1,4 +1,4 @@
-.testamonial {
+.testimonial {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -61,7 +61,7 @@
 }
 
 @media screen and (min-width: 656px) {
-  .testamonial__source {
+  .testimonial__source {
     &:hover {
       background: var(--color-background-highest);
     }

@@ -10,12 +10,6 @@
   background: var(--color-background-higher);
   border-radius: var(--border-radius-default);
 
-  transform: perspective(1500px) rotateY(15deg);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  transition: transform 1s ease 0s;
-  transform-style: preserve-3d;
-  margin-left: 12px;
-
   &__panel {
     background: var(--color-background-default);
     width: 100%;

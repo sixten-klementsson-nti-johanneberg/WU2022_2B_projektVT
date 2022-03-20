@@ -1,0 +1,17 @@
+.html-image {
+  position: relative;
+  transition: transform 1s ease 0s;
+
+  &--right {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transform: perspective(1500px) rotateY(15deg);
+    left: 2.2vw;
+  }
+
+  &--left {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    perspective-origin: left;
+    transform: perspective(1500px) rotateY(-15deg);
+    right: 2.2vw;
+  }
+}
