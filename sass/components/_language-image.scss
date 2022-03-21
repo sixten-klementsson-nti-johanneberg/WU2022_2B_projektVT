@@ -1,6 +1,9 @@
 .language-image {
   padding: 16px;
   height: max-content;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
 
   background: var(--color-background-higher);
   border-radius: var(--border-radius-default);
@@ -8,11 +11,34 @@
   &__inner {
     display: flex;
     gap: 16px;
-    padding: 16px;
 
+    padding: 16px;
     width: 100%;
     height: max-content;
     background: var(--color-background-default);
     border-radius: var(--border-radius-default);
+    overflow: hidden;
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+
+    animation: slide 12s infinite linear;
+  }
+
+  &__lang-logo {
+    height: 64px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 16px));
   }
 }

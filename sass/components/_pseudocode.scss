@@ -12,9 +12,11 @@
   }
 
   &__word {
-    height: 14px;
+    height: 16px;
     border-radius: 4px;
+    width: 0;
     background: var(--color-foreground-default);
+    transition: width cubic-bezier(0.23, 1, 0.32, 1), background ease;
 
     &--highlight {
       background: var(--color-primary-default);

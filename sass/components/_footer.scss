@@ -1,11 +1,19 @@
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 32px;
   align-items: center;
   background: var(--color-background-lower);
   padding: 64px 16px;
   height: max-content;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1256px;
+  }
 
   &__policies {
     display: flex;
@@ -53,6 +61,32 @@
   .footer__social-button {
     &:hover {
       background: var(--color-background-highest);
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .footer {
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+
+    &__content {
+      align-items: center;
+
+      height: 100%;
+    }
+
+    &__policies {
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    &__contact {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
     }
   }
 }

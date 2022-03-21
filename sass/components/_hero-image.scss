@@ -13,11 +13,32 @@
   background: var(--color-background-higher);
   border-radius: var(--border-radius-default);
 
+  &__tag {
+    position: absolute;
+    right: 8px;
+    z-index: 10;
+    padding: 4px 12px;
+    color: var(--color-white);
+    border-radius: var(--border-radius-default);
+
+    &--you {
+      background: var(--color-primary-default);
+      top: 8px;
+    }
+
+    &--best-friend {
+      top: 50%;
+      background: var(--color-secondary-default);
+    }
+  }
+
   &__panel {
+    position: relative;
     padding: 24px;
     background: var(--color-background-default);
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius-default);
+    overflow-y: auto;
   }
 }

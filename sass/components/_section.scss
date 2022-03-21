@@ -1,6 +1,52 @@
 .section {
   &--default {
-    max-width: 1256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 1256px;
+  }
+}
+
+@media screen and (min-width: 361px) {
+  .section {
+    &--default {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 656px) {
+  .section {
+    &--default {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section {
+    &--default {
+      padding-left: 88px;
+      padding-right: 88px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    &--default {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
