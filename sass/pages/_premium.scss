@@ -1,7 +1,6 @@
 .premium {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   background: var(--color-background-root);
@@ -15,6 +14,12 @@
     height: 800px;
     background: var(--color-background-default);
     border-radius: var(--border-radius-default);
+    margin: auto 0;
+
+    &--payment {
+      min-height: 800px;
+      height: max-content;
+    }
   }
 
   &__why {
@@ -48,6 +53,10 @@
     align-items: center;
     width: 100%;
     height: 180px;
+
+    &--terms {
+      margin-top: 32px;
+    }
   }
 
   &__terms {
@@ -80,6 +89,58 @@
   &__accept-button {
     width: 100%;
   }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__trial-disclaimer {
+    margin: 32px 0;
+    padding: 0 16px;
+  }
+
+  &__payment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 32px;
+    width: 100%;
+    height: max-content;
+    background: var(--color-background-default);
+    border-radius: var(--border-radius-default);
+  }
+
+  &__evidentials {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__evidential {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__evidential-title {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__evidential-image {
+    width: 24px;
+  }
 }
 
 @media screen and (min-width: 656px) {
@@ -111,6 +172,15 @@
     &__terms-message {
       text-align: left;
     }
+
+    &__form {
+      padding: 0 32px;
+      width: 100%;
+    }
+
+    &__trial-disclaimer {
+      padding: 0 32px;
+    }
   }
 }
 
@@ -123,6 +193,11 @@
       grid-template-columns: 1fr 1fr;
       max-width: 1000px;
       height: 600px;
+
+      &--payment {
+        min-height: 600px;
+        height: max-content;
+      }
     }
 
     &__why {
