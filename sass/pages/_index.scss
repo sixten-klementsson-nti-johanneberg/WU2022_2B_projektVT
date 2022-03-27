@@ -75,10 +75,8 @@
     overflow: auto;
   }
 
-  &__testimonial-header {
-    width: 100%;
-    text-align: center;
-    padding: 0 16px;
+  &__testimonial-list .testimonial {
+    flex-shrink: 0;
   }
 
   &__how {

@@ -1,0 +1,36 @@
+.gamemode-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+  padding: 32px;
+  height: 180px;
+  max-width: 360px;
+
+  background: var(--color-background-default);
+  border-radius: var(--border-radius-default);
+  overflow: hidden;
+
+  &__slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__logo {
+    height: 64px;
+  }
+}

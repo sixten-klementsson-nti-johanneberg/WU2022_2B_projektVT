@@ -24,9 +24,9 @@
   --color-background-higher: #eeeff2;
   --color-background-highest: #e3e5e8;
 
-  --color-outline-dimmest: #dfe1e2;
-  --color-outline-dimmer: #cfd1d3;
-  --color-outline-default: #bdc0c2;
+  --color-outline-dimmest: #f5f5f5;
+  --color-outline-dimmer: #ebebeb;
+  --color-outline-default: #e0e0e0;
 
   --color-primary-dimmest: #b84000;
   --color-primary-dimmer: #e04e00;
@@ -59,8 +59,7 @@
   --border-radius-default: 12px;
   --border-radius-button: 100px;
 
-  --shadow-small: 0px 1px 3px rgba(0, 0, 0, 0.1),
-    0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-small: 0px 2px 4px rgba(0, 0, 0, 0.07);
   --shadow-medium: 0px 4px 6px 0.1px rgba(0, 0, 0, 0.1),
     0px 2px 4px -2px rgba(0, 0, 0, 0.25);
   --shadow-big: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),

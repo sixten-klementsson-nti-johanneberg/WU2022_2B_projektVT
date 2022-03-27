@@ -1,343 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <title>proghour</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" media="all" />
-  <title>proghour frontpage</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <p class="header__logo">proghour</p>
 
-<body>
-  <header class="header">
-    <div class="header__content">
-      <p class="header__logo">proghour</p>
+        <nav class="header__nav">
+          <a class="text text--normal" href="login.html">Log In</a>
+          <a class="text text--normal" href="signup.html">Sign Up</a>
+          <a class="text text--normal" href="premium_terms.html">Premium</a>
+        </nav>
+      </div>
+    </header>
 
-      <nav class="header__nav">
-        <a class="text text--normal" href="login.html">Log In</a>
-        <a class="text text--normal" href="#">Create Game</a>
-      </nav>
-    </div>
-  </header>
+    <section class="index__hero section section--default section--primary">
+      <div class="index__hero-content section__content">
+        <div class="index__hero-information">
+          <h2 class="heading heading--big">
+            Let's make <span class="code-text">coding</span> the
+            <strong class="heading heading--big heading--highlight"
+              >highlight</strong
+            >
+            of your day
+          </h2>
 
-  <section class="index__hero section section--default section--primary">
-    <div class="index__hero-content section__content">
-      <div class="index__hero-information">
-        <h2 class="heading heading--big">
-          Let's make <span class="code-text">coding</span> the
-          <strong class="heading heading--big heading--highlight">highlight</strong>
-          of your day
+          <p class="index__hero-text text text--normal">
+            We transform the lonely experience of coding problems into a fun
+            collaborative game. We transform the lonely experience of coding
+            problems into a fun collaborative game.
+          </p>
+
+          <button
+            class="
+              button button--primary button--big button-text button-text--big
+              index__cta
+            "
+          >
+            Create Game
+          </button>
+        </div>
+
+        <div class="hero-image html-image html-image--left">
+          <p class="hero-image__tag hero-image__tag--you text text--bold">
+            You
+          </p>
+          <p
+            class="hero-image__tag hero-image__tag--best-friend text text--bold"
+          >
+            Best Friend
+          </p>
+          <div class="hero-image__you hero-image__panel"></div>
+          <div class="hero-image__best-friend hero-image__panel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="index__what section section--default">
+      <div class="section__content index__what-content">
+        <h2 class="heading heading--default">
+          Solve
+          <strong class="heading heading--default heading--highlight"
+            >fun
+          </strong>
+          code challenges with your friends
         </h2>
 
         <p class="index__hero-text text text--normal">
-          We transform the lonely experience of coding problems into a fun
-          collaborative game. We transform the lonely experience of coding
-          problems into a fun collaborative game.
+          Coding challenges is often a dreading task, or at least a bit
+          boring... and it’s notorious for being a nerdy solo experience. We’re
+          making this dreading task actually fun by making it a game without
+          removing the integral parts that all other coding games do.
         </p>
+      </div>
+    </section>
 
-        <button class="
+    <section class="index__features section section--default">
+      <div class="section__content index__features-content">
+        <div class="index__features-section index__features-section--flipped">
+          <div class="wrapper--heading-default index__features-text">
+            <h2 class="heading heading--default">
+              Choose your favourite between our 20+ languages
+            </h2>
+
+            <p class="index__hero-text text text--normal">
+              Coding challenges is often a dreading task, or at least a bit
+              boring... and it’s notorious for being a nerdy solo experience.
+              We’re making this dreading task actually fun by making it a game
+              without removing the integral parts that all other coding games
+              do.
+            </p>
+          </div>
+
+          <div>
+            <div class="language-image html-image html-image--right">
+              <div class="language-image__inner">
+                <div class="language-image__row">
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/javascript_logo.png"
+                    alt="JavaScript logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/python_logo.png"
+                    alt="Python logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/java_logo.png"
+                    alt="Python logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/typescript_logo.png"
+                    alt="TypeScript logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/csharp_logo.png"
+                    alt="C# logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/bash_logo.png"
+                    alt="Bash logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/cpp_logo.png"
+                    alt="C++ logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/php_logo.png"
+                    alt="php logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/clang_logo.png"
+                    alt="C-lang logo"
+                  />
+                </div>
+                <div class="language-image__row">
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/javascript_logo.png"
+                    alt="JavaScript logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/python_logo.png"
+                    alt="Python logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/java_logo.png"
+                    alt="Python logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/typescript_logo.png"
+                    alt="TypeScript logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/csharp_logo.png"
+                    alt="C# logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/bash_logo.png"
+                    alt="Bash logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/cpp_logo.png"
+                    alt="C++ logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/php_logo.png"
+                    alt="php logo"
+                  />
+                  <img
+                    class="language-image__lang-logo"
+                    src="img/clang_logo.png"
+                    alt="C-lang logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="index__features-section">
+          <div class="wrapper--heading-default index__features-text">
+            <h2 class="heading heading--default">
+              You’ll never get bored with our 10 different gamemodes
+            </h2>
+
+            <p class="index__hero-text text text--normal">
+              You'll never get bored because you will always have something new
+              to try! You can choose between a pleathera of gamemodes, all of
+              them we believe are fun.
+            </p>
+          </div>
+
+          <div class="index__panel">
+            <div class="gamemode-image html-image html-image--left">
+              <div class="gamemode-image__information gamemode-image__panel">
+                <div class="gamemode-image__row">
+                  <div class="gamemode-image__image-wrapper">
+                    <img
+                      class="gamemode-image__logo"
+                      src="img/duel.png"
+                      alt="Duel"
+                    />
+                    <p class="heading heading--small">Duel</p>
+                  </div>
+                  <div class="gamemode-image__image-wrapper">
+                    <img
+                      class="gamemode-image__logo"
+                      src="img/team_duel.jpg"
+                      alt="Team Duel logo"
+                    />
+                    <p class="heading heading--small">Team Duel</p>
+                  </div>
+                  <div class="gamemode-image__image-wrapper">
+                    <img
+                      class="gamemode-image__logo"
+                      src="img/code_swap.png"
+                      alt="Code Swap logo"
+                    />
+                    <p class="heading heading--small">Code Swap</p>
+                  </div>
+                  <div class="gamemode-image__image-wrapper">
+                    <img
+                      class="gamemode-image__logo"
+                      src="img/duel.png"
+                      alt="Duel logo"
+                    />
+                    <p class="heading heading--small">Duel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="index__testimonials">
+      <h2 class="index__testimonial-header heading heading--default">
+        Let’s have a fantastic
+        <strong class="heading heading--default heading--highlight"
+          >evening</strong
+        >
+        with your friends!
+      </h2>
+
+      <div class="index__testimonial-list">
+        <div class="testimonial">
+          <div class="testimonial__person">
+            <div class="testimonial__left">
+              <img
+                class="testimonial__avatar-image"
+                src="./img/example_avatar.png"
+                alt="Avatar"
+              />
+              <div class="testimonial__details">
+                <p class="text text--bold">@SickanDev</p>
+                <p class="text text--normal">Software Developer</p>
+              </div>
+            </div>
+
+            <div class="testimonial__right">
+              <a class="testimonial__source" href="#">
+                <img
+                  class="testimonial__source-image"
+                  src="./img/twitter_logo.png"
+                  alt="Twitter logo"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="testimonial__text">
+            <p class="text text--normal">
+              “proghour is the most fun I’ve ever had programming!”
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__person">
+            <div class="testimonial__left">
+              <img
+                class="testimonial__avatar-image"
+                src="./img/example_avatar.png"
+                alt="Avatar"
+              />
+              <div class="testimonial__details">
+                <p class="text text--bold">@SickanDev</p>
+                <p class="text text--normal">Software Developer</p>
+              </div>
+            </div>
+
+            <div class="testimonial__right">
+              <a class="testimonial__source" href="#">
+                <img
+                  class="testimonial__source-image"
+                  src="./img/twitter_logo.png"
+                  alt="Twitter logo"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="testimonial__text">
+            <p class="text text--normal">
+              “proghour is the most fun I’ve ever had programming!”
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__person">
+            <div class="testimonial__left">
+              <img
+                class="testimonial__avatar-image"
+                src="./img/example_avatar.png"
+                alt="Avatar"
+              />
+              <div class="testimonial__details">
+                <p class="text text--bold">@SickanDev</p>
+                <p class="text text--normal">Software Developer</p>
+              </div>
+            </div>
+
+            <div class="testimonial__right">
+              <a class="testimonial__source" href="#">
+                <img
+                  class="testimonial__source-image"
+                  src="./img/twitter_logo.png"
+                  alt="Twitter logo"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="testimonial__text">
+            <p class="text text--normal">
+              “proghour is the most fun I’ve ever had programming!”
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__person">
+            <div class="testimonial__left">
+              <img
+                class="testimonial__avatar-image"
+                src="./img/example_avatar.png"
+                alt="Avatar"
+              />
+              <div class="testimonial__details">
+                <p class="text text--bold">@SickanDev</p>
+                <p class="text text--normal">Software Developer</p>
+              </div>
+            </div>
+
+            <div class="testimonial__right">
+              <a class="testimonial__source" href="#">
+                <img
+                  class="testimonial__source-image"
+                  src="./img/twitter_logo.png"
+                  alt="Twitter logo"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="testimonial__text">
+            <p class="text text--normal">
+              “proghour is the most fun I’ve ever had programming!”
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__person">
+            <div class="testimonial__left">
+              <img
+                class="testimonial__avatar-image"
+                src="./img/example_avatar.png"
+                alt="Avatar"
+              />
+              <div class="testimonial__details">
+                <p class="text text--bold">@SickanDev</p>
+                <p class="text text--normal">Software Developer</p>
+              </div>
+            </div>
+
+            <div class="testimonial__right">
+              <a class="testimonial__source" href="#">
+                <img
+                  class="testimonial__source-image"
+                  src="./img/twitter_logo.png"
+                  alt="Twitter logo"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="testimonial__text">
+            <p class="text text--normal">
+              “proghour is the most fun I’ve ever had programming!”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="index__how section section--default">
+      <div class="section__content index__how-content">
+        <h2 class="heading heading--default">
+          Jump right in and start playing now!
+        </h2>
+
+        <button
+          class="
             button button--primary button--big button-text button-text--big
             index__cta
-          ">
+          "
+        >
           Create Game
         </button>
       </div>
+    </section>
 
-      <div class="hero-image html-image html-image--left">
-        <p class="hero-image__tag hero-image__tag--you text text--bold">You</p>
-        <p class="hero-image__tag hero-image__tag--best-friend text text--bold">Best Friend</p>
-        <div class="hero-image__you hero-image__panel"></div>
-        <div class="hero-image__best-friend hero-image__panel"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="index__what section section--default">
-    <div class="section__content index__what-content">
-      <h2 class="heading heading--default">
-        Solve
-        <strong class="heading heading--default heading--highlight">fun
-        </strong>
-        code challenges with your friends
-      </h2>
-
-      <p class="index__hero-text text text--normal">
-        Coding challenges is often a dreading task, or at least a bit boring...
-        and it’s notorious for being a nerdy solo experience. We’re making this
-        dreading task actually fun by making it a game without removing the
-        integral parts that all other coding games do.
-      </p>
-    </div>
-  </section>
-
-  <section class="index__features section section--default">
-    <div class="section__content index__features-content">
-      <div class="index__features-section index__features-section--flipped">
-        <div class="wrapper--heading-default index__features-text">
-          <h2 class="heading heading--default">
-            Choose your favourite between our 20+ languages
-          </h2>
-
-          <p class="index__hero-text text text--normal">
-            Coding challenges is often a dreading task, or at least a bit
-            boring... and it’s notorious for being a nerdy solo experience.
-            We’re making this dreading task actually fun by making it a game
-            without removing the integral parts that all other coding games do.
-          </p>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__policies">
+          <a class="text text--normal" href="#">Terms of Service</a>
+          <a class="text text--normal" href="#">Privacy policy</a>
+          <a class="text text--normal" href="#">Cookie policy</a>
         </div>
 
-        <div>
-          <div class="language-image html-image html-image--right">
-            <div class="language-image__inner">
-              <div class="language-image__row">
-                <img class="language-image__lang-logo" src="img/javascript_logo.png" alt="JavaScript logo">
-                <img class="language-image__lang-logo" src="img/python_logo.png" alt="Python logo">
-                <img class="language-image__lang-logo" src="img/java_logo.png" alt="Python logo">
-                <img class="language-image__lang-logo" src="img/typescript_logo.png" alt="TypeScript logo">
-                <img class="language-image__lang-logo" src="img/csharp_logo.png" alt="C# logo">
-                <img class="language-image__lang-logo" src="img/bash_logo.png" alt="Bash logo">
-                <img class="language-image__lang-logo" src="img/cpp_logo.png" alt="C++ logo">
-                <img class="language-image__lang-logo" src="img/php_logo.png" alt="php logo">
-                <img class="language-image__lang-logo" src="img/clang_logo.png" alt="C-lang logo">
-              </div>
-              <div class="language-image__row">
-                <img class="language-image__lang-logo" src="img/javascript_logo.png" alt="JavaScript logo">
-                <img class="language-image__lang-logo" src="img/python_logo.png" alt="Python logo">
-                <img class="language-image__lang-logo" src="img/java_logo.png" alt="Python logo">
-                <img class="language-image__lang-logo" src="img/typescript_logo.png" alt="TypeScript logo">
-                <img class="language-image__lang-logo" src="img/csharp_logo.png" alt="C# logo">
-                <img class="language-image__lang-logo" src="img/bash_logo.png" alt="Bash logo">
-                <img class="language-image__lang-logo" src="img/cpp_logo.png" alt="C++ logo">
-                <img class="language-image__lang-logo" src="img/php_logo.png" alt="php logo">
-                <img class="language-image__lang-logo" src="img/clang_logo.png" alt="C-lang logo">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="index__features-section">
-        <div class="wrapper--heading-default index__features-text">
-          <h2 class="heading heading--default">
-            You’ll never get bored with our 10 different gamemodes
-          </h2>
-
-          <p class="index__hero-text text text--normal">
-            You'll never get bored because you will always have something new to
-            try! You can choose between a pleathera of gamemodes, all of them we
-            believe are fun.
-          </p>
-        </div>
-
-        <div class="index__panel">
-          <div class="gamemode-image html-image html-image--left">
-            <div class="gamemode-image__information gamemode-image__panel">
-              <div class="gamemode-image__row">
-                <div class="gamemode-image__image-wrapper">
-                  <img class="gamemode-image__logo" src="img/duel.png" alt="Duel">
-                  <p class="heading heading--small">Duel</p>
-                </div>
-                <div class="gamemode-image__image-wrapper">
-                  <img class="gamemode-image__logo" src="img/team_duel.jpg" alt="Team Duel logo">
-                  <p class="heading heading--small">Team Duel</p>
-                </div>
-                <div class="gamemode-image__image-wrapper">
-                  <img class="gamemode-image__logo" src="img/code_swap.png" alt="Code Swap logo">
-                  <p class="heading heading--small">Code Swap</p>
-                </div>
-                <div class="gamemode-image__image-wrapper">
-                  <img class="gamemode-image__logo" src="img/duel.png" alt="Duel logo">
-                  <p class="heading heading--small">Duel</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="index__testimonials">
-    <h2 class="index__testimonial-header heading heading--default">
-      Let’s have a fantastic
-      <strong class="heading heading--default heading--highlight">evening</strong>
-      with your friends!
-    </h2>
-
-    <div class="index__testimonial-list">
-      <div class="testimonial">
-        <div class="testimonial__person">
-          <div class="testimonial__left">
-            <img class="testimonial__avatar-image" src="./img/example_avatar.png" alt="Avatar" />
-            <div class="testimonial__details">
-              <p class="text text--bold">@SickanDev</p>
-              <p class="text text--normal">Software Developer</p>
-            </div>
-          </div>
-
-          <div class="testimonial__right">
-            <a class="testimonial__source" href="#">
-              <img class="testimonial__source-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+        <div class="footer__contact">
+          <div class="footer__socials">
+            <a class="footer__social-button" href="#">
+              <img
+                class="footer__social-image"
+                src="./img/twitter_logo.png"
+                alt="Twitter logo"
+              />
+            </a>
+            <a class="footer__social-button" href="#">
+              <img
+                class="footer__social-image"
+                src="./img/twitter_logo.png"
+                alt="Twitter logo"
+              />
+            </a>
+            <a class="footer__social-button" href="#">
+              <img
+                class="footer__social-image"
+                src="./img/twitter_logo.png"
+                alt="Twitter logo"
+              />
+            </a>
+            <a class="footer__social-button" href="#">
+              <img
+                class="footer__social-image"
+                src="./img/twitter_logo.png"
+                alt="Twitter logo"
+              />
             </a>
           </div>
-        </div>
 
-        <div class="testimonial__text">
-          <p class="text text--normal">
-            “proghour is the most fun I’ve ever had programming!”
-          </p>
+          <p class="text text--normal">support@proghour.com</p>
         </div>
       </div>
+    </footer>
 
-      <div class="testimonial">
-        <div class="testimonial__person">
-          <div class="testimonial__left">
-            <img class="testimonial__avatar-image" src="./img/example_avatar.png" alt="Avatar" />
-            <div class="testimonial__details">
-              <p class="text text--bold">@SickanDev</p>
-              <p class="text text--normal">Software Developer</p>
-            </div>
-          </div>
-
-          <div class="testimonial__right">
-            <a class="testimonial__source" href="#">
-              <img class="testimonial__source-image" src="./img/twitter_logo.png" alt="Twitter logo" />
-            </a>
-          </div>
-        </div>
-
-        <div class="testimonial__text">
-          <p class="text text--normal">
-            “proghour is the most fun I’ve ever had programming!”
-          </p>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial__person">
-          <div class="testimonial__left">
-            <img class="testimonial__avatar-image" src="./img/example_avatar.png" alt="Avatar" />
-            <div class="testimonial__details">
-              <p class="text text--bold">@SickanDev</p>
-              <p class="text text--normal">Software Developer</p>
-            </div>
-          </div>
-
-          <div class="testimonial__right">
-            <a class="testimonial__source" href="#">
-              <img class="testimonial__source-image" src="./img/twitter_logo.png" alt="Twitter logo" />
-            </a>
-          </div>
-        </div>
-
-        <div class="testimonial__text">
-          <p class="text text--normal">
-            “proghour is the most fun I’ve ever had programming!”
-          </p>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial__person">
-          <div class="testimonial__left">
-            <img class="testimonial__avatar-image" src="./img/example_avatar.png" alt="Avatar" />
-            <div class="testimonial__details">
-              <p class="text text--bold">@SickanDev</p>
-              <p class="text text--normal">Software Developer</p>
-            </div>
-          </div>
-
-          <div class="testimonial__right">
-            <a class="testimonial__source" href="#">
-              <img class="testimonial__source-image" src="./img/twitter_logo.png" alt="Twitter logo" />
-            </a>
-          </div>
-        </div>
-
-        <div class="testimonial__text">
-          <p class="text text--normal">
-            “proghour is the most fun I’ve ever had programming!”
-          </p>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial__person">
-          <div class="testimonial__left">
-            <img class="testimonial__avatar-image" src="./img/example_avatar.png" alt="Avatar" />
-            <div class="testimonial__details">
-              <p class="text text--bold">@SickanDev</p>
-              <p class="text text--normal">Software Developer</p>
-            </div>
-          </div>
-
-          <div class="testimonial__right">
-            <a class="testimonial__source" href="#">
-              <img class="testimonial__source-image" src="./img/twitter_logo.png" alt="Twitter logo" />
-            </a>
-          </div>
-        </div>
-
-        <div class="testimonial__text">
-          <p class="text text--normal">
-            “proghour is the most fun I’ve ever had programming!”
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="index__how section section--default">
-    <div class="section__content index__how-content">
-      <h2 class="heading heading--default">
-        Jump right in and start playing now!
-      </h2>
-
-      <button class="
-          button button--primary button--big button-text button-text--big
-          index__cta
-        ">
-        Create Game
-      </button>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__policies">
-        <a class="text text--normal" href="#">Terms of Service</a>
-        <a class="text text--normal" href="#">Privacy policy</a>
-        <a class="text text--normal" href="#">Cookie policy</a>
-      </div>
-
-      <div class="footer__contact">
-        <div class="footer__socials">
-          <a class="footer__social-button" href="#">
-            <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
-          </a>
-          <a class="footer__social-button" href="#">
-            <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
-          </a>
-          <a class="footer__social-button" href="#">
-            <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
-          </a>
-          <a class="footer__social-button" href="#">
-            <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
-          </a>
-        </div>
-
-        <p class="text text--normal">support@proghour.com</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/pseudocode.js"></script>
-</body>
-
+    <script src="js/pseudocode.js"></script>
+  </body>
 </html>
