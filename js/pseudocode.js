@@ -77,18 +77,3 @@ setInterval(() => {
     color: "var(--color-secondary-default",
   });
 }, randomIntFromInterval(3000, 5000));
-
-let gamemodeLines = [
-  [20, 30, 20],
-  [10, 40],
-  [40, 33, 5],
-  [30, 20],
-  [17, 39, 23],
-  [10, 40],
-];
-
-generatePseudocode(gamemodeLines, ".gamemode-image__code");
-
-setInterval(() => {
-  changeRandomPseudocodeWord(".gamemode-image__code");
-}, randomIntFromInterval(3000, 5000));

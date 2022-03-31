@@ -1,108 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" media="all" />
-    <title>proghour - Log In</title>
-  </head>
 
-  <body>
-    <div class="auth">
-      <main class="auth__content">
-        <article class="auth__why">
-          <h2 class="auth__heading heading heading--default">
-            Why not try out a
-            <span class="heading heading--default heading--highlight"
-              >new and fun</span
-            >
-            gamemode?
-          </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" media="all" />
+  <title>proghour - Log In</title>
+</head>
 
-          <div class="gamemode-showcase">
-            <div class="gamemode-showcase__slide">
-              <div class="gamemode-showcase__image-wrapper">
-                <img
-                  class="gamemode-showcase__logo"
-                  src="img/duel.png"
-                  alt="Duel"
-                />
-                <p class="text text--bold">Duel</p>
-              </div>
+<body>
+  <div class="auth">
+    <main class="auth__content">
+      <article class="auth__why">
+        <h2 class="auth__heading heading heading--default">
+          Why not try out a
+          <span class="heading heading--default heading--highlight">new and fun</span>
+          gamemode?
+        </h2>
 
-              <p class="text text--normal">
-                Meet your friends in a 1v1 battle to determine who’s the best
-                coder!
-              </p>
+        <div class="gamemode-showcase">
+          <div class="gamemode-showcase__slide">
+            <div class="gamemode-showcase__image-wrapper">
+              <img class="gamemode-showcase__logo" src="img/duel.png" alt="Duel" />
+              <p class="text text--bold">Duel</p>
+            </div>
+
+            <p class="text text--normal">
+              Meet your friends in a 1v1 battle to determine who’s the best
+              coder!
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <section class="auth__main">
+        <h1 class="heading heading--default">Welcome back!</h1>
+
+        <form action="" class="auth__form">
+          <div class="auth__fields">
+            <div class="text-input">
+              <label for="emailOrUsername" class="text text--small text--subtle">Email or Username</label>
+              <input class="text-input__field text text--normal" id="emailOrUsername" name="emailOrUsername" type="text"
+                required />
+            </div>
+
+            <div class="text-input">
+              <label for="password" class="text text--small text--subtle">Password</label>
+              <input class="text-input__field text text--normal" id="password" name="password" type="text" required />
             </div>
           </div>
-        </article>
 
-        <section class="auth__main">
-          <h1 class="heading heading--default">Welcome back!</h1>
-
-          <form action="" class="auth__form">
-            <div class="auth__fields">
-              <div class="text-input">
-                <label
-                  for="emailOrUsername"
-                  class="text text--small text--subtle"
-                  >Email or Username</label
-                >
-                <input
-                  class="text-input__field text text--normal"
-                  id="emailOrUsername"
-                  name="emailOrUsername"
-                  type="text"
-                  required
-                />
-              </div>
-
-              <div class="text-input">
-                <label for="password" class="text text--small text--subtle"
-                  >Password</label
-                >
-                <input
-                  class="text-input__field text text--normal"
-                  id="password"
-                  name="password"
-                  type="text"
-                  required
-                />
-              </div>
-            </div>
-
-            <button
-              class="
+          <button class="
                 auth__button auth__button--login
                 button button--primary button--big button-text button-text--big
-              "
-              type="submit"
-            >
-              Log In
-            </button>
+              " type="submit">
+            Log In
+          </button>
 
-            <p class="auth__redirect text text--bold">
-              New here?
-              <a href="/signup.html" class="text--link">Sign Up here</a>
-            </p>
-          </form>
-
-          <p class="auth__terms text text--normal text--subtlest">
-            By continuing, you agree to
-            <a class="text--subtlest" href="#">Proghour’s Terms</a>
-            &
-            <a class="text--subtlest" href="#">Privacy Policy</a>
+          <p class="auth__redirect text text--bold">
+            New here?
+            <a href="signup.html" class="text--link">Sign Up here</a>
           </p>
-        </section>
-      </main>
-    </div>
-  </body>
+        </form>
+
+        <p class="auth__terms text text--normal text--subtlest">
+          By continuing, you agree to
+          <a class="text--subtlest" href="#">Proghour’s Terms</a>
+          &
+          <a class="text--subtlest" href="#">Privacy Policy</a>
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+
 </html>
