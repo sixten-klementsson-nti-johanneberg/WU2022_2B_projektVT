@@ -21,9 +21,8 @@
   }
 
   &__logo {
-    font-family: var(--font-heading);
-    font-size: 29px;
-    font-weight: 600;
-    color: var(--color-foreground-default);
+    height: 56px;
+    box-shadow: var(--shadow-small);
+    border-radius: var(--border-radius-default);
   }
 }

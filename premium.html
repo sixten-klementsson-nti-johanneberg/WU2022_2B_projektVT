@@ -1,274 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" media="all" />
-    <title>proghour</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <p class="header__logo">proghour</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" media="all" />
+  <title>proghour</title>
+</head>
 
-        <nav class="header__nav">
-          <a class="text text--normal" href="login.html">Log In</a>
-          <a class="text text--normal" href="signup.html">Sign Up</a>
-          <a class="text text--normal" href="premium_terms.html">Premium</a>
-        </nav>
-      </div>
-    </header>
+<body>
+  <header class="header">
+    <div class="header__content">
+      <img class="header__logo" src="./img/logotyp_proghour.jpg" alt="Proghour logo">
 
-    <section class="premium__hero section section--default section--primary">
-      <div class="premium__hero-content section__content">
-        <h2 class="premium__hero-heading heading heading--big">
-          Unlock the
-          <strong class="heading heading--big heading--highlight"
-            >full power</strong
-          >
-          of proghour with Premium
-        </h2>
+      <nav class="header__nav">
+        <a class="text text--normal" href="index.html">Home</a>
+        <a class="text text--normal" href="signup.html">Sign Up</a>
+        <a class="text text--normal" href="premium_terms.html">Buy Premium</a>
+      </nav>
+    </div>
+  </header>
 
-        <button
-          class="
+  <section class="premium__hero section section--default section--primary">
+    <div class="premium__hero-content section__content">
+      <h1 class="premium__hero-heading heading heading--big">
+        Unlock the
+        <strong class="heading heading--big heading--highlight">full power</strong>
+        of proghour with Premium
+      </h1>
+
+      <button class="
             button button--primary button--big button-text button-text--big
             premium__cta
-          "
-        >
-          Get Premium
-        </button>
+          ">
+        Get Premium
+      </button>
+    </div>
+  </section>
+
+  <section class="premium__free-trial section section--default">
+    <h2 class="heading heading--big">
+      Buy today and get
+      <strong class="heading heading--default heading--highlight">14 days</strong>
+      free. Cancel anytime!
+    </h2>
+  </section>
+
+  <section class="premium__features section section--default">
+    <div class="section__content premium__features-content">
+      <div id="multiple-languages" class="wrapper--heading-default premium__features-text">
+        <h2 class="heading heading--default premium__features-header">
+          Let your friends choose their favourite language
+        </h2>
+
+        <p class="text text text--normal">
+          Make it possible for your friends to use their favourite language!
+          You cannot always win because they haven’t unlocked their full power
+        </p>
       </div>
-    </section>
 
-    <section class="premium__features section section--default">
-      <div class="section__content premium__features-content">
-        <div
-          id="multiple-languages"
-          class="wrapper--heading-default premium__features-text"
-        >
-          <h2 class="heading heading--default premium__features-header">
-            Let your friends choose their favourite language
-          </h2>
-
-          <p class="text text text--normal">
-            Make it possible for your friends to use their favourite language!
-            You cannot always win because they haven’t unlocked their full power
-          </p>
+      <div id="multiple-languages-image" class="multiple-languages-image html-image html-image--right">
+        <div class="multiple-languages-image__lock">
+          <img class="multiple-languages-image__lock-icon" src="./img/lock.svg" alt="Lock" />
         </div>
 
-        <div
-          id="multiple-languages-image"
-          class="multiple-languages-image html-image html-image--right"
-        >
-          <div class="multiple-languages-image__lock">
-            <img
-              class="multiple-languages-image__lock-icon"
-              src="./img/lock.svg"
-              alt="Lock"
-            />
-          </div>
-
-          <div class="multiple-languages-image__inner">
-            <img
-              class="multiple-languages-image__lang-logo"
-              src="img/javascript_logo.png"
-              alt="JavaScript logo"
-            />
-            <img
-              class="multiple-languages-image__lang-logo"
-              src="img/python_logo.png"
-              alt="Python logo"
-            />
-            <img
-              class="multiple-languages-image__lang-logo"
-              src="img/java_logo.png"
-              alt="Python logo"
-            />
-            <img
-              class="multiple-languages-image__lang-logo"
-              src="img/typescript_logo.png"
-              alt="TypeScript logo"
-            />
-            <img
-              class="multiple-languages-image__lang-logo"
-              src="img/csharp_logo.png"
-              alt="C# logo"
-            />
-            <img
-              class="multiple-languages-image__lang-logo"
-              src="img/bash_logo.png"
-              alt="Bash logo"
-            />
-          </div>
+        <div class="multiple-languages-image__inner">
+          <img class="multiple-languages-image__lang-logo" src="img/javascript_logo.svg" alt="JavaScript logo" />
+          <img class="multiple-languages-image__lang-logo" src="img/python_logo.svg" alt="Python logo" />
+          <img class="multiple-languages-image__lang-logo" src="img/r_logo.svg" alt="R-lang logo" />
+          <img class="multiple-languages-image__lang-logo" src="img/typescript_logo.png" alt="TypeScript logo" />
+          <img class="multiple-languages-image__lang-logo" src="img/csharp_logo.png" alt="C# logo" />
+          <img class="multiple-languages-image__lang-logo" src="img/bash_logo.png" alt="Bash logo" />
         </div>
+      </div>
 
-        <div
-          id="unlock-gamemodes"
-          class="wrapper--heading-default premium__features-text"
-        >
-          <h2 class="heading heading--default premium__features-header">
-            Unlock all gamemodes
-          </h2>
+      <div id="unlock-gamemodes" class="wrapper--heading-default premium__features-text">
+        <h2 class="heading heading--default premium__features-header">
+          Unlock all gamemodes
+        </h2>
 
-          <p class="text text--normal">
-            It can be tiring waiting for your favourite gamemode to come around
-            again. With premium you can play whatever gamemode you want whenever
-          </p>
-        </div>
+        <p class="text text--normal">
+          It can be tiring waiting for your favourite gamemode to come around
+          again. With premium you can play whatever gamemode you want whenever
+        </p>
+      </div>
 
-        <div
-          id="unlock-gamemodes-image"
-          class="gamemode-image html-image html-image--left"
-        >
-          <div class="gamemode-image__information gamemode-image__panel">
-            <div class="gamemode-image__row">
-              <div class="gamemode-image__image-wrapper">
-                <img
-                  class="gamemode-image__logo"
-                  src="img/duel.png"
-                  alt="Duel"
-                />
-                <p class="heading heading--small">Duel</p>
-              </div>
-              <div class="gamemode-image__image-wrapper">
-                <img
-                  class="gamemode-image__logo"
-                  src="img/team_duel.jpg"
-                  alt="Team Duel logo"
-                />
-                <p class="heading heading--small">Team Duel</p>
-              </div>
-              <div class="gamemode-image__image-wrapper">
-                <img
-                  class="gamemode-image__logo"
-                  src="img/code_swap.png"
-                  alt="Code Swap logo"
-                />
-                <p class="heading heading--small">Code Swap</p>
-              </div>
-              <div class="gamemode-image__image-wrapper">
-                <img
-                  class="gamemode-image__logo"
-                  src="img/duel.png"
-                  alt="Duel logo"
-                />
-                <p class="heading heading--small">Duel</p>
-              </div>
+      <div id="unlock-gamemodes-image" class="gamemode-image html-image html-image--left">
+        <div class="gamemode-image__information gamemode-image__panel">
+          <div class="gamemode-image__row">
+            <div class="gamemode-image__image-wrapper">
+              <img class="gamemode-image__logo" src="img/duel.svg" alt="Duel" />
+              <p class="heading heading--small">Duel</p>
+            </div>
+            <div class="gamemode-image__image-wrapper">
+              <img class="gamemode-image__logo" src="img/team_duel.svg" alt="Team Duel logo" />
+              <p class="heading heading--small">Team Duel</p>
+            </div>
+            <div class="gamemode-image__image-wrapper">
+              <img class="gamemode-image__logo" src="img/code_swap.svg" alt="Code Swap logo" />
+              <p class="heading heading--small">Code Swap</p>
+            </div>
+            <div class="gamemode-image__image-wrapper">
+              <img class="gamemode-image__logo" src="img/duel.svg" alt="Duel logo" />
+              <p class="heading heading--small">Duel</p>
             </div>
           </div>
         </div>
-
-        <div
-          id="invite-friends"
-          class="wrapper--heading-default premium__features-text"
-        >
-          <h2 class="heading heading--default premium__features-header">
-            Invite all of your friends
-          </h2>
-
-          <p class="text text--normal">
-            No more restrictions of how many friends you can invite per game. No
-            one wants to feel left out, so why not make it possible for them to
-            also join?
-          </p>
-        </div>
-
-        <div
-          id="invite-friends-image"
-          class="invite-friends-image html-image html-image--right"
-        >
-          <div class="invite-friends-image__inner">
-            <img height="64px" src="./img/friends.svg" alt="Friends" />
-          </div>
-        </div>
       </div>
-    </section>
 
-    <section class="premium__free-trial section section--default">
-      <h2 class="heading heading--big">
-        Buy today and get
-        <strong class="heading heading--default heading--highlight"
-          >14 days</strong
-        >
-        free. Cancel anytime!
-      </h2>
-    </section>
-
-    <section class="index__how section section--default">
-      <div class="section__content index__how-content">
-        <h2 class="heading heading--default">
-          Let’s unlock the
-
-          <strong class="heading heading--default heading--highlight"
-            >full power</strong
-          >
-          of proghour!
+      <div id="invite-friends" class="wrapper--heading-default premium__features-text">
+        <h2 class="heading heading--default premium__features-header">
+          Invite all of your friends
         </h2>
 
-        <button
-          class="
+        <p class="text text--normal">
+          No more restrictions of how many friends you can invite per game. No
+          one wants to feel left out, so why not make it possible for them to
+          also join?
+        </p>
+      </div>
+
+      <div id="invite-friends-image" class="invite-friends-image html-image html-image--right">
+        <div class="invite-friends-image__inner">
+          <img height="64" src="./img/friends.svg" alt="Friends" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="index__how section section--default">
+    <div class="section__content index__how-content">
+      <h2 class="heading heading--default">
+        Let’s unlock the
+
+        <strong class="heading heading--default heading--highlight">full power</strong>
+        of proghour!
+      </h2>
+
+      <button class="
             button button--primary button--big button-text button-text--big
             premium__cta
-          "
-        >
-          Get Premium
-        </button>
-      </div>
-    </section>
+          ">
+        Get Premium
+      </button>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="footer__content">
-        <div class="footer__policies">
-          <a class="text text--normal" href="#">Terms of Service</a>
-          <a class="text text--normal" href="#">Privacy policy</a>
-          <a class="text text--normal" href="#">Cookie policy</a>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__policies">
+        <a class="text text--normal" href="#">Terms of Service</a>
+        <a class="text text--normal" href="#">Privacy policy</a>
+        <a class="text text--normal" href="#">Cookie policy</a>
+      </div>
+
+      <div class="footer__contact">
+        <div class="footer__socials">
+          <a class="footer__social-button" href="#">
+            <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+          </a>
+          <a class="footer__social-button" href="#">
+            <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+          </a>
+          <a class="footer__social-button" href="#">
+            <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+          </a>
+          <a class="footer__social-button" href="#">
+            <img class="footer__social-image" src="./img/twitter_logo.png" alt="Twitter logo" />
+          </a>
         </div>
 
-        <div class="footer__contact">
-          <div class="footer__socials">
-            <a class="footer__social-button" href="#">
-              <img
-                class="footer__social-image"
-                src="./img/twitter_logo.png"
-                alt="Twitter logo"
-              />
-            </a>
-            <a class="footer__social-button" href="#">
-              <img
-                class="footer__social-image"
-                src="./img/twitter_logo.png"
-                alt="Twitter logo"
-              />
-            </a>
-            <a class="footer__social-button" href="#">
-              <img
-                class="footer__social-image"
-                src="./img/twitter_logo.png"
-                alt="Twitter logo"
-              />
-            </a>
-            <a class="footer__social-button" href="#">
-              <img
-                class="footer__social-image"
-                src="./img/twitter_logo.png"
-                alt="Twitter logo"
-              />
-            </a>
-          </div>
-
-          <p class="text text--normal">support@proghour.com</p>
-        </div>
+        <p class="text text--normal">support@proghour.com</p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="js/pseudocode.js"></script>
-  </body>
+  <script src="js/navigateToPremium.js"></script>
+</body>
+
 </html>
