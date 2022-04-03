@@ -872,6 +872,102 @@ body {
     transform: translateX(-75%);
   }
 }
+.multiple-languages-image {
+  padding: 16px;
+  height: max-content;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  background: var(--color-background-higher);
+  border-radius: var(--border-radius-default);
+}
+.multiple-languages-image__inner {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+  width: 100px;
+  height: max-content;
+  background: var(--color-background-default);
+  border-radius: var(--border-radius-default);
+  overflow: hidden;
+  animation: 4s ease multiple-languages-inner forwards alternate infinite;
+}
+.multiple-languages-image__lock {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  top: calc(50% - 24px);
+  left: 93px;
+  border-radius: 100px;
+  background: var(--color-background-default);
+  border: 1px solid var(--color-outline-default);
+  box-shadow: var(--shadow-small);
+  z-index: 10;
+  animation: 4s ease multiple-languages-lock forwards alternate infinite;
+}
+.multiple-languages-image__row {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+.multiple-languages-image__lang-logo {
+  height: 64px;
+}
+
+@keyframes multiple-languages-lock {
+  0% {
+    transform: scale(100%);
+  }
+  45% {
+    transform: scale(100%);
+  }
+  55% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes multiple-languages-inner {
+  0% {
+    width: 100px;
+  }
+  60% {
+    width: 100px;
+  }
+  70% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.invite-friends-image {
+  padding: 16px;
+  height: max-content;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  background: var(--color-background-higher);
+  border-radius: var(--border-radius-default);
+}
+.invite-friends-image__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  height: max-content;
+  background: var(--color-background-default);
+  border-radius: var(--border-radius-default);
+  overflow: hidden;
+}
+
 .index__hero {
   padding-top: 96px;
   padding-bottom: 128px;
@@ -1339,25 +1435,21 @@ body {
   width: 100%;
 }
 .premium__features {
-  padding-top: 128px;
+  padding-top: 96px;
   padding-bottom: 128px;
   background: var(--color-background-default);
 }
 .premium__features-content {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
   gap: 128px;
-}
-.premium__features-section {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
 }
 .premium__free-trial {
   display: flex;
   justify-content: center;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   background: var(--color-secondary-strongest);
 }
 .premium__how {
@@ -1390,43 +1482,53 @@ body {
     align-items: center;
     max-width: 760px;
   }
-  .premium__features-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 128px;
+
+  #multiple-languages {
+    grid-area: ml;
   }
-  .premium__features-section--flipped {
-    flex-direction: column;
+
+  #multiple-languages-image {
+    grid-area: mli;
   }
-  .premium__features-text {
-    width: 100%;
-    max-width: 800px;
+
+  #unlock-gamemode {
+    grid-area: ug;
+  }
+
+  #unlock-gamemode-image {
+    grid-area: ugi;
+  }
+
+  #invite-friends {
+    grid-area: if;
+  }
+
+  #invite-friends-image {
+    grid-area: ifi;
   }
 }
 @media screen and (min-width: 1256px) {
-  .premium__features-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 128px;
-  }
-  .premium__features-section--flipped {
-    flex-direction: row-reverse;
-  }
-  .premium__features-text {
-    min-width: 450px;
-    width: 100%;
-    max-width: 500px;
-  }
   .premium__features {
-    padding-top: 196px;
-    padding-bottom: 196px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 128px;
   }
   .premium__features-content {
-    gap: 196px;
+    display: grid;
+    grid-template-areas: "mli ml" "ug ugi" "ifi if";
+    grid-template-columns: 520px 520px;
+    grid-template-rows: 300px 300px 300px;
+    width: max-content;
+    justify-items: center;
+    align-items: center;
+    column-gap: 128px;
+    row-gap: 0;
+    max-width: initial;
+  }
+  .premium__features-text {
+    margin: 0 auto;
   }
 }
 

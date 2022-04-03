@@ -18,7 +18,7 @@
   }
 
   &__features {
-    padding-top: 128px;
+    padding-top: 96px;
     padding-bottom: 128px;
     background: var(--color-background-default);
   }
@@ -26,20 +26,15 @@
   &__features-content {
     display: flex;
     flex-direction: column;
+    max-width: 800px;
     gap: 128px;
-  }
-
-  &__features-section {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
   }
 
   &__free-trial {
     display: flex;
     justify-content: center;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 
     background: var(--color-secondary-strongest);
   }
@@ -82,53 +77,58 @@
       align-items: center;
       max-width: 760px;
     }
+  }
 
-    &__features-section {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: 128px;
+  #multiple-languages {
+    grid-area: ml;
+  }
 
-      &--flipped {
-        flex-direction: column;
-      }
-    }
+  #multiple-languages-image {
+    grid-area: mli;
+  }
 
-    &__features-text {
-      width: 100%;
-      max-width: 800px;
-    }
+  #unlock-gamemode {
+    grid-area: ug;
+  }
+
+  #unlock-gamemode-image {
+    grid-area: ugi;
+  }
+
+  #invite-friends {
+    grid-area: if;
+  }
+
+  #invite-friends-image {
+    grid-area: ifi;
   }
 }
 
 @media screen and (min-width: 1256px) {
   .premium {
-    &__features-section {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 128px;
-
-      &--flipped {
-        flex-direction: row-reverse;
-      }
-    }
-
-    &__features-text {
-      min-width: 450px;
-      width: 100%;
-      max-width: 500px;
-    }
-
     &__features {
-      padding-top: 196px;
-      padding-bottom: 196px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-top: 64px;
+      padding-bottom: 128px;
     }
 
     &__features-content {
-      gap: 196px;
+      display: grid;
+      grid-template-areas: "mli ml" "ug ugi" "ifi if";
+      grid-template-columns: 520px 520px;
+      grid-template-rows: 300px 300px 300px;
+      width: max-content;
+      justify-items: center;
+      align-items: center;
+      column-gap: 128px;
+      row-gap: 0;
+      max-width: initial;
+    }
+
+    &__features-text {
+      margin: 0 auto;
     }
   }
 }

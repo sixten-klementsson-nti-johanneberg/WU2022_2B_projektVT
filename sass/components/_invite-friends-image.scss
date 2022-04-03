@@ -1,0 +1,23 @@
+.invite-friends-image {
+  padding: 16px;
+  height: max-content;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+
+  background: var(--color-background-higher);
+  border-radius: var(--border-radius-default);
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    padding: 16px;
+    height: max-content;
+    background: var(--color-background-default);
+    border-radius: var(--border-radius-default);
+    overflow: hidden;
+  }
+}
