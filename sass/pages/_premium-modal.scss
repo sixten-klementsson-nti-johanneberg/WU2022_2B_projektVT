@@ -44,6 +44,12 @@
     overflow: auto;
   }
 
+  &__close {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
   &__heading {
     display: none;
   }

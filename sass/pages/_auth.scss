@@ -32,6 +32,12 @@
     padding: 16px;
   }
 
+  &__close {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
   &__main {
     position: relative;
 
@@ -91,6 +97,7 @@
     gap: 16px;
     width: 100%;
   }
+
 }
 
 @media screen and (min-width: 656px) {

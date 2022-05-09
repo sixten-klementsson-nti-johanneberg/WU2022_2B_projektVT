@@ -1128,6 +1128,11 @@ body {
   border-radius: var(--border-radius-default);
   padding: 16px;
 }
+.auth__close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
 .auth__main {
   position: relative;
   display: flex;
@@ -1270,6 +1275,11 @@ body {
   align-items: center;
   max-height: 100%;
   overflow: auto;
+}
+.premium-modal__close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
 }
 .premium-modal__heading {
   display: none;

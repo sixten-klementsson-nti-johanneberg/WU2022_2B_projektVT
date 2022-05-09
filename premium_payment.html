@@ -16,6 +16,10 @@
 
 <body>
   <div class="premium-modal">
+    <a href="/" class="premium-modal__close">
+      <img src="img/cross.svg" alt="Cross">
+    </a>
+
     <main class="premium-modal__content premium__content--payment">
       <article class="premium-modal__why">
         <div class="premium-modal__payment-info">
@@ -37,7 +41,7 @@
               </p>
             </div>
 
-            <div class="premium-modal__evidential">
+            <article class="premium-modal__evidential">
               <div class="premium-modal__evidential-title">
                 <img class="premium-modal__evidential-image"
                   src="data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6H4C2.89543 6 2 6.89543 2 8V16C2 17.1046 2.89543 18 4 18H20C21.1046 18 22 17.1046 22 16V8C22 6.89543 21.1046 6 20 6Z' stroke='%23082B45' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 10V14M6 12H10H6Z' stroke='%23082B45' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 11V11.01' stroke='%23082B45' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18 13V13.01' stroke='%23082B45' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
@@ -47,8 +51,8 @@
               <p class="text text--normal">
                 Switch it up! We know that 1v1 can get boring after a while
               </p>
-            </div>
-            <div class="premium-modal__evidential">
+            </article>
+            <article class="premium-modal__evidential">
               <div class="premium-modal__evidential-title">
                 <img class="premium-modal__evidential-image"
                   src="data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 3V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H19' stroke='%23082B45' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H14L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21Z' stroke='%23082B45' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 13L9 15L10 17' stroke='%23082B45' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 13L15 15L14 17' stroke='%23082B45' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
@@ -58,7 +62,7 @@
               <p class="text text--normal">
                 Make sure your friends can use different languages
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </article>
@@ -89,7 +93,7 @@
             </label>
           </div>
 
-          <div class="premium-modal__fields">
+          <section class="premium-modal__fields">
             <div class="text-input">
               <label for="nameOnCard" class="text text--small text--subtle">Name on card</label>
               <input class="text-input__field text text--normal" id="nameOnCard" name="nameOnCard" type="text"
@@ -101,7 +105,7 @@
               <input class="text-input__field text text--normal" id="cardInformation" name="cardInformation" type="text"
                 placeholder="1234 1234 1234 1234" required />
             </div>
-          </div>
+          </section>
 
           <button class="
                 button button--primary button--big button-text button-text--big
