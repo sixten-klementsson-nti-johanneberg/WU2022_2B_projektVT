@@ -1250,6 +1250,8 @@ body {
   overflow-y: auto;
 }
 .premium-modal__content {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-rows: max-content 1fr;
   width: 100%;
@@ -1283,6 +1285,7 @@ body {
   position: absolute;
   right: 4px;
   top: 4px;
+  z-index: 1;
 }
 .premium-modal__heading {
   display: none;

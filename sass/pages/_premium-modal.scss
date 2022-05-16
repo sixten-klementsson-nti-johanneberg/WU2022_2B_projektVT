@@ -8,6 +8,9 @@
   overflow-y: auto;
 
   &__content {
+    position: relative;
+    z-index: 1;
+
     display: grid;
     grid-template-rows: max-content 1fr;
     width: 100%;
@@ -48,6 +51,7 @@
     position: absolute;
     right: 4px;
     top: 4px;
+    z-index: 1;
   }
 
   &__heading {
