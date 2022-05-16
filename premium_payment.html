@@ -16,12 +16,12 @@
 
 <body>
   <div class="premium-modal">
-    <a href="/" class="premium-modal__close">
-      <img src="img/cross.svg" alt="Cross">
-    </a>
-
     <main class="premium-modal__content premium__content--payment">
-      <article class="premium-modal__why">
+      <a href="/" class="premium-modal__close">
+        <img src="img/cross.svg" alt="Cross">
+      </a>
+
+      <section class="premium-modal__why">
         <div class="premium-modal__payment-info">
           <div class="premium-modal__cost">
             <h1 class="heading heading--default">30 days free</h1>
@@ -65,9 +65,9 @@
             </article>
           </div>
         </div>
-      </article>
+      </section>
 
-      <div class="premium-modal__main">
+      <section class="premium-modal__main">
         <div class="premium-modal__stepper">
           <ol class="stepper">
             <li class="stepper__item stepper__item--previous text text--normal">
@@ -77,49 +77,48 @@
               <p class="stepper__title text text--normal">Payment</p>
             </li>
           </ol>
+      </section>
+
+      <form class="premium-modal__form" action="#">
+        <div class="button-switch">
+          <label class="button-switch__label">
+            <input class="button-switch__input" type="radio" id="billing" name="billing" value="monthly" checked />
+            <span class="button-switch__span text text--normal"><strong class="text text--bold">Monthly</strong> $12
+              month</span>
+          </label>
+          <label class="button-switch__label">
+            <input class="button-switch__input" type="radio" id="billing" name="billing" value="yearly" />
+            <span class="button-switch__span text text--normal"><strong class="text text--bold">Yearly</strong> $8
+              month</span>
+          </label>
         </div>
 
-        <form class="premium-modal__form" action="#">
-          <div class="button-switch">
-            <label class="button-switch__label">
-              <input class="button-switch__input" type="radio" id="billing" name="billing" value="monthly" checked />
-              <span class="button-switch__span text text--normal"><strong class="text text--bold">Monthly</strong> $12
-                month</span>
-            </label>
-            <label class="button-switch__label">
-              <input class="button-switch__input" type="radio" id="billing" name="billing" value="yearly" />
-              <span class="button-switch__span text text--normal"><strong class="text text--bold">Yearly</strong> $8
-                month</span>
-            </label>
+        <section class="premium-modal__fields">
+          <div class="text-input">
+            <label for="nameOnCard" class="text text--small text--subtle">Name on card</label>
+            <input class="text-input__field text text--normal" id="nameOnCard" name="nameOnCard" type="text" required />
           </div>
 
-          <section class="premium-modal__fields">
-            <div class="text-input">
-              <label for="nameOnCard" class="text text--small text--subtle">Name on card</label>
-              <input class="text-input__field text text--normal" id="nameOnCard" name="nameOnCard" type="text"
-                required />
-            </div>
+          <div class="text-input">
+            <label for="nameOnCard" class="text text--small text--subtle">Card Information</label>
+            <input class="text-input__field text text--normal" id="cardInformation" name="cardInformation" type="text"
+              placeholder="1234 1234 1234 1234" required />
+          </div>
+        </section>
 
-            <div class="text-input">
-              <label for="nameOnCard" class="text text--small text--subtle">Card Information</label>
-              <input class="text-input__field text text--normal" id="cardInformation" name="cardInformation" type="text"
-                placeholder="1234 1234 1234 1234" required />
-            </div>
-          </section>
-
-          <button class="
+        <button class="
                 button button--primary button--big button-text button-text--big
               " type="submit">
-            Start Trial
-          </button>
-        </form>
+          Start Trial
+        </button>
+      </form>
 
-        <p class="premium-modal__trial-disclaimer text text--subtlest">
-          After your trial ends, you will be charged $18.00 per month starting
-          April 23, 2022. You can always cancel before then.
-        </p>
-      </div>
-    </main>
+      <p class="premium-modal__trial-disclaimer text text--subtlest">
+        After your trial ends, you will be charged $18.00 per month starting
+        April 23, 2022. You can always cancel before then.
+      </p>
+  </div>
+  </main>
   </div>
 </body>
 
